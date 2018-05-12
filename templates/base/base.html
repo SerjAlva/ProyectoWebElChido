@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tittle %}PetyMX{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.css' %}">
+</head>
+<body>
+    {% block header %}
+      <header>
+      <!--Inicia la navbar-->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper green">
+            <a href="#!" class="brand-logo"><img class="responsive-img" src={% static 'media/img/logo1.png' %} alt=""></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li class="active"><a href="#">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="registrarse.html">Registrarse</a></li>
+              <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav green" id="mobile-demo">
+        <li class="active"><a href="#"><span class="txtBlanco">Inicio</span></a></li>
+        <li><a href="productos.html"><span class="txtBlanco">Productos</span></a></li>
+        <li><a href="servicios.html"><span class="txtBlanco">Servicios</span></a></li>
+        <li><a href="contacto.html"><span class="txtBlanco">Contacto</span></a></li>
+        <li><a href="registrarse.html"><span class="txtBlanco">Registrate</span><i class="tiny material-icons">person</i></a></li>
+        <li><a href="login.html"><span class="txtBlanco">Iniciar sesión</span><i class="tiny material-icons">exit_to_app</i></a></li>
+      </ul>
+
+      <!--Termina la nav bar-->
+    </header>
+    {% endblock %}
+    {% block content %}
+        <h2>este es el bloque :o</h2>
+    {% endblock %}
+    {% block footer %}
+        <footer class="page-footer green">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 s8">
+            <center>
+              <h5 class="white-text">Siguenos en nuestras redes</h5>
+              <a title="Facebook" href="https://www.facebook.com"><img src={% static 'media/img/icons8-facebook-25.png' %} alt="fb"></a>
+              <a title="Twitter" href="https://www.twitter.com"><img src={% static 'media/img/icons8-twitter-25.png' %} alt="tw"></a>
+              <a title="Google+" href="https://plus.google.com"><img src={% static 'media/img/icons8-google-plus-25.png' %} alt="goo"></a>
+              <a title="LinkedIn" href="https://mx.linkedin.com/"><img src={% static 'media/img/icons8-linkedin-25.png' %} alt="in"></a>
+            </center>
+          </div>
+          <div class="col l4 s4">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="legal.html">Legal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col s4"><center>Pety MX © 2018</center></div>
+            <div class="col s4"><center>Derechos reservados</center></div>
+            <div class="col s4"><center><a title="De México para el mundo" class="grey-text text-lighten-4 right" ><img src={% static 'media/img/icons8-mexico-30.png' %} alt="México"></a></center></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+</body>
+<script type="text/javascript" src= {% static 'js/jquery.js' %}></script>
+<script type="text/javascript" src= {% static 'js/app.js' %}></script>
+<script type="text/javascript" src= {% static 'js/materialize.min.js' %}></script>
+</html>

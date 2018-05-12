@@ -1,0 +1,83 @@
+{% extends 'base/base.html' %}
+{% block  content %}
+<main>
+     <div class="row">
+      <br>
+      <div class="col s6">
+        <h4>¡En PetyMX contamos con lo mejor para tu mascota!</h4>
+        <br>
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="/static/media/img/veterinaria.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3><style> h3{color: #080808;} </style> El personal más calificado</h3>
+                <h5><style> h5{color: #080808;} </style>porque se merece lo mejor</h5>
+              </div>
+            </li>
+            <li>
+              <img src="/static/media/img/comida.png"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Comida de calidad</h3>
+                <h5>demuestrale cuanto lo quieres</h5>
+              </div>
+            </li>
+            <li>
+              <img src="/static/media/img/juguetenuevo.jpg"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>Pon a prueba sus habilidades</h3>
+                <h5>alimenta su imaginación</h5>
+              </div>
+            </li>
+            <li>
+              <img src="/static/media/img/amorsx3.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>Dale tanto amor...</h3>
+                <h5>...como el a ti</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <center><h5>Ingresa:</h5></center>
+      <br>
+      <div class="col s6">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="col s4"></div>
+              <div class="input-field col s4">
+                <i class="material-icons prefix">email</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Email</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="col s4"></div>
+              <div class="input-field col s4">
+                <i class="material-icons prefix">lock</i>
+                <input id="validar_contraseña" type="password" class="validate">
+                <label for="icon_prefix">Contraseña</label>
+              </div>
+            </div>
+          </form>
+        </div>
+         <div class="row">
+          <div class="col s8"></div>
+          <div class="row">
+            <div class="col s12" align="center">
+              <button class="btn waves-effect waves-light" type="submit" name="action">¡Vamos!
+                <i class="material-icons right">pets</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
