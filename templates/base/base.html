@@ -19,12 +19,12 @@
             <a href="#!" class="brand-logo"><img class="responsive-img" src={% static 'media/img/logo1.png' %} alt=""></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li class="active"><a href="#">Inicio</a></li>
-              <li><a href="productos.html">Productos</a></li>
-              <li><a href="servicios.html">Servicios</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="registrarse.html">Registrarse</a></li>
-              <li><a href="login.html">Iniciar sesión</a></li>
+              <li><a href="{% url 'pety' %}">Inicio</a></li>
+                
+              <li><a href="{% url 'servicios' %}">Servicios</a></li>
+              <li><a href="{% url 'contacto' %}">Contacto</a></li>
+              <li><a href="{% url 'registrarse' %}">Registrarse</a></li>
+              <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
             </ul>
           </div>
         </nav>

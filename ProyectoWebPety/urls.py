@@ -8,5 +8,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^pety/', include('apps.pety.urls')),
-    url(r'^login/', include('apps.login.urls')),
+    url(r'^login/', include('apps.pety.urls')),
+    url(r'^contacto/', include('apps.pety.urls'))
 ]

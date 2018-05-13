@@ -1,0 +1,56 @@
+{% extends 'base/base.html' %}
+{% block content %}
+    <main>
+
+      <img class="responsive-img" src="/static/media/img/contacto.jpg" alt="servicios">
+
+      <div class="container">
+
+        <center><h5 class="fuente3">¡Ponte en contacto con Pety!</h5></center>
+
+
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+                <input placeholder="Juan Luis" id="first_name" type="text" class="validate">
+                <label for="first_name">Nombre(s)</label>
+              </div>
+              <div class="input-field col s12 m6 l6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Apellidos </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="text" type="text" class="validate">
+                <label for="text">Mensaje</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12" align="center">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar a Pety MX
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.9520855191618!2d-99.18424458553457!3d19.32788534903013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce000454d028e9%3A0x4a85a53ac30dc37b!2sPROTECO!5e0!3m2!1ses-419!2smx!4v1526018549115" width="1000" height="850" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+      </div>
+
+    </main>
+{% endblock %}
