@@ -10,4 +10,4 @@ def login(request):
 def contacto(request):
     return render(request, 'pety/contacto.html')
 def registrarse(request):
-    return render(request, 'pety/regustrarse.html')
+    return render(request, 'pety/registrarse.html')
